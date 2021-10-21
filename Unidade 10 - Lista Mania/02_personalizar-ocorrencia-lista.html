@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Personalizar Ocorrência de uma Lista</title>
+        <style>
+            body {
+                font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+                font-size:14px;
+            }
+
+            li:first-child{color: aqua;} /*Primeiro elemento*/
+            li:last-child{color: aquamarine;} /*Ultimo elemento*/
+            li:nth-child(3){color: blueviolet;} /*Elemento especificado*/
+
+            li:nth-child(odd){color: brown;} /*Elementos ímpares*/
+            li:nth-child(even){color: blue;} /*Elementos pares*/            
+        </style>
+    </head>
+
+    <body>
+
+        <ul>
+            <li>Brasil</li>
+            <li>Portugal</li>
+            <li>Angola</li>
+            <li>Moçambique</li>
+            <li>Cabo Verde</li>
+        </ul>  
+
+    </body>
+</html>

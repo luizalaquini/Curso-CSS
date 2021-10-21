@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Criar Elementos com Cores Alternadas</title>
+		<style>
+            body {
+                font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+                font-size:13px;
+            }
+
+            ul { margin:0;padding:0;list-style:none }
+
+            li {
+                width: 200px;
+                padding: 5px;
+                margin-bottom: 1px;
+                background-color: antiquewhite;
+            }
+
+            /*A SEGUIR VÁRIAS OUTRAS MANEIRAS DE SE APLICAR li:nth-child()*/
+            /*li:nth-child(2n) { 
+                background-color: beige;
+            }
+            li:nth-child(3n) {
+                background-color: azure;
+            }*/
+            li:nth-child(3n+1) { /*conta também o primeiro da lista*/
+                background-color: bisque;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li>Brasil</li>
+            <li>Portugal</li>
+            <li>Angola</li>
+            <li>Moçambique</li>
+            <li>Cabo Verde</li>
+            <li>Guiné-Bissau</li>
+            <li>Timor-Leste</li>
+            <li>Guiné Equatorial</li>
+            <li>Sao Tomé e Principe</li>
+            <li>Macau</li>
+        </ul>
+    </body>
+</html>
